@@ -179,6 +179,45 @@ img {
 	color: var(--secondary-color);
 }
 
+.language-switcher {
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+	margin-left: 1.5rem;
+	font-size: 0.9rem;
+}
+
+.language-switcher a {
+	color: var(--dark-color);
+	transition: var(--transition);
+}
+
+.language-switcher a:hover {
+	color: var(--primary-color);
+}
+
+.footer-languages {
+	margin-top: 0.5rem;
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.lang-option {
+	color: inherit;
+	opacity: 0.85;
+}
+
+.lang-option.active {
+	font-weight: 600;
+	opacity: 1;
+}
+
+.lang-separator {
+	opacity: 0.6;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -580,6 +619,28 @@ footer {
 .footer-bottom p {
     color: rgba(255, 255, 255, 0.6);
     font-size: 0.9rem;
+}
+
+.footer-languages {
+	margin-top: 0.5rem;
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.lang-option {
+	color: inherit;
+	opacity: 0.85;
+}
+
+.lang-option.active {
+	font-weight: 600;
+	opacity: 1;
+}
+
+.lang-separator {
+	opacity: 0.6;
 }
 
 /* Responsive Design */

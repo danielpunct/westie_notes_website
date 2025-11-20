@@ -28,12 +28,19 @@
         <nav class="navbar">
             <div class="logo">WestieNotes</div>
             <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#download">Download</a></li>
-                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                <li><a href="terms-of-use.html">Terms of Use</a></li>
+                <li><a href="#features" data-i18n="nav.features">Features</a></li>
+                <li><a href="#how-it-works" data-i18n="nav.howItWorks">How It Works</a></li>
+                <li><a href="#download" data-i18n="nav.download">Download</a></li>
+                <li><a id="nav-privacy" href="privacy-policy.html" data-i18n="nav.privacy">Privacy Policy</a></li>
+                <li><a id="nav-terms" href="terms-of-use.html" data-i18n="nav.terms">Terms of Use</a></li>
             </ul>
+            <div class="language-switcher">
+                <a href="#" class="lang-option" data-lang="en">EN</a>
+                <span class="lang-separator">|</span>
+                <a href="#" class="lang-option" data-lang="es">ES</a>
+                <span class="lang-separator">|</span>
+                <a href="#" class="lang-option" data-lang="fr">FR</a>
+            </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -42,11 +49,11 @@
         </nav>
         <div class="hero">
             <div class="hero-content">
-                <h1>Organize your next dancing trip with westie notes</h1>
-                <p>Simple, fast, and secure note-taking for everyone.</p>
+                <h1 data-i18n="hero.title">Organize your next dancing trip with westie notes</h1>
+                <p data-i18n="hero.subtitle">Simple, fast, and secure note-taking for everyone.</p>
                 <div class="cta-buttons">
-                    <a href="#download" class="btn primary">Download Now</a>
-                    <a href="#features" class="btn secondary">Learn More</a>
+                    <a href="#download" class="btn primary" data-i18n="hero.ctaPrimary">Download Now</a>
+                    <a href="#features" class="btn secondary" data-i18n="hero.ctaSecondary">Learn More</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -60,62 +67,62 @@
     </header>
 
     <section id="features" class="features">
-        <h2>Amazing Features</h2>
+        <h2 data-i18n="features.title">Amazing Features</h2>
         <div class="features-grid">
             <div class="feature-card">
                 <i class="fas fa-calendar-alt"></i>
-                <h3>Calendar View</h3>
-                <p>Plan and view all your dance events in a clean, intuitive calendar.</p>
+                <h3 data-i18n="features.calendar.title">Calendar View</h3>
+                <p data-i18n="features.calendar.text">Plan and view all your dance events in a clean, intuitive calendar.</p>
             </div>
             <div class="feature-card">
                 <i class="fas fa-wallet"></i>
-                <h3>Expenses Logging</h3>
-                <p>Track travel, passes, and accommodation costs for each trip.</p>
+                <h3 data-i18n="features.expenses.title">Expenses Logging</h3>
+                <p data-i18n="features.expenses.text">Track travel, passes, and accommodation costs for each trip.</p>
             </div>
             <div class="feature-card">
                 <i class="fas fa-music"></i>
-                <h3>West Coast Swing Events Autocomplete</h3>
-                <p>Quickly add popular West Coast Swing events with smart autocomplete.</p>
+                <h3 data-i18n="features.autocomplete.title">West Coast Swing Events Autocomplete</h3>
+                <p data-i18n="features.autocomplete.text">Quickly add popular West Coast Swing events with smart autocomplete.</p>
             </div>
         </div>
     </section>
 
     <section id="how-it-works" class="how-it-works">
-        <h2>How It Works</h2>
+        <h2 data-i18n="how.title">How It Works</h2>
         <div class="steps">
             <div class="step">
                 <div class="step-number">1</div>
-                <h3>Download the App</h3>
-                <p>Available on iOS, Android, and Web.</p>
+                <h3 data-i18n="how.step1.title">Download the App</h3>
+                <p data-i18n="how.step1.text">Available on iOS, Android, and Web.</p>
             </div>
             <div class="step">
                 <div class="step-number">2</div>
-                <h3>Register your events</h3>
-                <p>Log your events in seconds and start taking notes.</p>
+                <h3 data-i18n="how.step2.title">Register your events</h3>
+                <p data-i18n="how.step2.text">Log your events in seconds and start taking notes.</p>
             </div>
             <div class="step">
                 <div class="step-number">3</div>
-                <h3>Stay Organized</h3>
-                <p>Keep all your travel details organized and accessible.</p>
+                <h3 data-i18n="how.step3.title">Stay Organized</h3>
+                <p data-i18n="how.step3.text">Keep all your travel details organized and accessible.</p>
             </div>
         </div>
     </section>
 
     <section id="download" class="download">
-        <h2>Download Westie Notes Today</h2>
+        <h2 data-i18n="download.title">Download Westie Notes Today</h2>
         <div class="download-buttons">
             <a href="https://apps.apple.com/us/app/westie-notes/id6752130555" class="app-store-btn" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-apple"></i>
                 <div>
-                    <span>Download on the</span>
-                    <strong>App Store</strong>
+                    <span data-i18n="download.appstore.small">Download on the</span>
+                    <strong data-i18n="download.appstore.big">App Store</strong>
                 </div>
             </a>
             <a href="https://play.google.com/store/apps/details?id=com.unyawn.eventslog" class="play-store-btn" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-google-play"></i>
                 <div>
-                    <span>Get it on</span>
-                    <strong>Google Play</strong>
+                    <span data-i18n="download.play.small">Get it on</span>
+                    <strong data-i18n="download.play.big">Google Play</strong>
                 </div>
             </a>
         </div>
@@ -125,16 +132,23 @@
         <div class="footer-content">
             <div class="footer-logo">WestieNotes</div>
             <div class="footer-links">
-                <a href="privacy-policy.html">Privacy Policy</a>
-                <a href="terms-of-use.html">Terms of Use</a>
-                <a href="mailto:unyawndeveloper@gmail.com">Contact Us</a>
+                <a id="footer-privacy" href="privacy-policy.html" data-i18n="footer.privacy">Privacy Policy</a>
+                <a id="footer-terms" href="terms-of-use.html" data-i18n="footer.terms">Terms of Use</a>
+                <a href="mailto:unyawndeveloper@gmail.com" data-i18n="footer.contact">Contact Us</a>
             </div>
             <div class="social-links">
                 <a href="https://www.instagram.com/westienotes/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
             </div>
+            <div class="footer-languages">
+                <a href="#" class="lang-option" data-lang="en">EN</a>
+                <span class="lang-separator">|</span>
+                <a href="#" class="lang-option" data-lang="es">ES</a>
+                <span class="lang-separator">|</span>
+                <a href="#" class="lang-option" data-lang="fr">FR</a>
+            </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 WestieNotes. All rights reserved.</p>
+            <p data-i18n="footer.copyright">&copy; 2025 WestieNotes. All rights reserved.</p>
         </div>
     </footer>
 
